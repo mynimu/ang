@@ -1,0 +1,23 @@
+<h1>My Accounts Test</h1>
+  
+  <div *ngIf="result">
+	 <p  *ngFor="let item of result.accounts">
+ 		<img src="{{item.icon}}"/> {{item.name}} - {{item.currency}} {{item.balance.balance}}
+ 		
+ 		 		
+ 		</p><!-- 
+ 		<img src="{{item.additional_icons.60x60}}">
+ 		{{item|json}}
+ 		 -->
+ 
+  <select class="form-control" id="exampleSelect1">
+        <option></option>
+        <option *ngFor="let item of result.accounts" >{{item.name}} - {{item.currency}} {{item.balance.balance}}</option>
+    </select>
+</div>  
+
+123
+<div>
+{{result|json}}
+
+</div>
