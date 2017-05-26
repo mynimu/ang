@@ -8,9 +8,8 @@ import { ApiService } from './api/api.service';
 export class AppComponent  {
 
 
-  result: any; 
-  
-   constructor (private service: ApiService){
-    this.service.callFigo().then(a => this.result = a).catch(a => this.result = 'Error '+a);
+  result: any;
+   constructor (private service: ApiService) {
+    this.service.callFigo().then(a => this.result = a).catch(a => this.result = 'Error ' + a);
     }
  }
